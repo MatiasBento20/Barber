@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    
+}
+
+
+body{
+    background-color: black;
+    background-position: center;
+}
+.contenido{
+    display: flex;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenido .titulo{
+    text-align: center;
+    color: #D4AF37;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: 150px;
+   
+   
+    
+}
+.contenido .titulo span{
+    font-size: 50px;
+    color: #D4AF37;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+
+
+}
+.contenido .titulo .Ktitle{
+    width: 50px;
+    height: 60px;
+    top: 10px;
+    position: relative;
+    
+}
+
+  
+.contenido .botuno{
+    
+    cursor: pointer;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: rgb(10, 10, 10);
+    border: 1px solid #fff;
+    color: white;
+    text-transform: uppercase;
+    transition: .5s;
+    text-decoration: none;
+ 
+}
+
+.botuno:hover {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    color: black;
+}
+#registrarcliente{
+    background-color: black;
+}
+
+#registrarventa{
+    background-color: black;
+}
+
+.tventas .ventas{
+    font-size: 50px;
+    color: #D4AF37;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 100;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.tventas .ventas span{
+    font-size: 50px;
+    color: #D4AF37;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #000000;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 10px;
+
+
+}
+.form .controls{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    margin-top: 5px;  
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 0.5em;
+    border-color: #000000;
+}
+.form .items{
+    color: white;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    
+    
+}
+
+
+
+.form .guardar{ 
+    border-radius: 5px;
+    height: 30px;
+    width: 30%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    
+}
+.form .guardar:hover {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    border-style: dotted;
+    color: black;
+
+}
+
+
+.formventas {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    background-color: #000000;
+    margin-top: 10px;
+    margin: auto;
+    margin-left: 25%; /* Ajusta el margen izquierdo */
+    padding: 20px;
+}
+
+.formventas .control {
+    background-color: white;
+    width: 35%;
+    height: 30px;
+    color: black;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 0.5em;
+    margin-top: 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.formventas .buscar {
+    border-radius: 5px;
+    width: 22%;
+    height: 31px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+
+.formventas .buscar:hover {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    border-style: dotted;
+    color: black;
+
+}
+
+.conteiner .formdos{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15.5%;
+    right: 25%;
+    padding: 5px;
+    border-radius: 2px;
+    width: 20%;
+    height: 30%;
+    border-color: #D4AF37;
+    border-width: 3px;
+    border-style: solid; 
+
+ 
+ 
+}
+
+.conteiner .formdos .items{
+    color: #D4AF37;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-align: center;
+    
+    
+
+}
+.formventas .controlMont{
+
+    background-color: white;
+    width: 35%;
+    height: 30px;
+    color: black;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 0.5em;
+    margin-top: 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+
+}
+.formventas .guardarMont{
+
+    border-radius: 5px;
+    width: 22%;
+    height: 31px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    
+    
+    
+    
+}
+.formventas .guardarMont:hover {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    border-style: dotted;
+    color: black;
+
+}
+
+.dclientes{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: #fff;
+    width: 60%;
+    height: 80px;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+.dclientes .datoscliente{
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+
+}
+
+.cargaventa{
+    text-align: center;
+    color: #D4AF37;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    margin-top: 2%;
+    padding: 2px;
+    margin-right: 20.5%;
+
+   
+}
+.formventas .guardar{ 
+    border-radius: 5px;
+    width: 22%;
+    height: 31px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    
+    
+    
+}
+
+
+
+.formventas .guardar:hover{
+
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    border-style: dotted;
+    color: black;
+
+}
+
+.transacciones{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: #fff;
+    width: 60%;
+    height: 80px;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+.transacciones .historial{
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+}
+
+@media screen and (max-width:800px){
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        background-color: #000000;
+        margin: auto;
+        margin-top: 5px;
+        border-radius: 5px;
+        padding: 10px;
+    
+    
+    }
+    .form .controls{
+        width: 100%;
+        height: 30px;
+        background-color: white;
+        color: #000000;
+        border-radius: 5px;
+        margin-bottom: 16px;
+        margin-top: 5px;  
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-indent: 0.5em;
+        border-color: #000000;
+    }
+    .form .items{
+        color: white;
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 1px;
+        
+        
+    }
+    
+    
+    .form .guardar{ 
+        border-radius: 5px;
+        height: 30px;
+        width: 30%;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+        letter-spacing: 1px;
+        
+    }
+    .form .guardar:hover {
+        background-color: #D4AF37;
+        border-color: #D4AF37;
+        border-style: dotted;
+        color: black;
+    
+    }
+
+    .formventas{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #000000;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        margin: auto;
+        
+    
+    }
+    .formventas .control{
+        background-color: white;
+        width: 50%;
+        height: 30px;
+        color: black;
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-indent: 0.5em;
+        margin-top: 10px;
+        margin: auto;
+        border-radius: 5px;
+        margin-left: 5px;
+        letter-spacing: 1px;
+        
+        
+    }
+    
+    
+    .formventas .buscar{ 
+        border-radius: 5px;
+        width: 30%;
+        height: 31px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+        margin-top: 2px;
+        margin-left: 5px;
+        letter-spacing: 1px;
+        
+        
+        
+    }
+    .formventas .buscar:hover {
+        background-color: #D4AF37;
+        border-color: #D4AF37;
+        border-style: dotted;
+        color: black;
+    
+    }
+    .dclientes{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        background-color: #fff;
+        width: 90%;
+        height: 50px;
+        border-radius: 5px;
+        margin-top: 5%;
+    }
+    .dclientes .datoscliente{
+        color: #000000;
+        font-size: 20px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: auto;
+    
+    }
+    
+    .cargaventa{
+        text-align: center;
+        color: #D4AF37;
+        font-size: 35px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 500;
+        margin-top: 5%;
+        padding: 8px;
+    
+       
+    }
+    .formventas .guardar{ 
+        border-radius: 5px;
+        width: 30%;
+        height: 31px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+        margin-top: 1px;
+        margin-left: 5px;
+        letter-spacing: 1px;
+        
+        
+        
+    }
+    
+    
+    
+    .formventas .guardar:hover{
+    
+        background-color: #D4AF37;
+        border-color: #D4AF37;
+        border-style: dotted;
+        color: black;
+    
+    }
+    
+    .transacciones{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        background-color: #fff;
+        width: 90%;
+        height: 50px;
+        border-radius: 5px;
+        margin-top: 5%;
+    }
+    .transacciones .historial{
+        color: #000000;
+        font-size: 20px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: auto;
+    }
+
+}

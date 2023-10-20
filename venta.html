@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Registro Ventas / CORK</title>
+</head>
+
+<body>
+
+    <div class="tventas">
+        <h1 class="ventas">Cork - <span>REGISTRO DE VENTAS</span></h1>
+
+
+    </div>
+    <div class="conteiner">
+        <div id="formBusqueda" class="formventas">
+
+
+        <input class="control" type="number" name="dni" id="dni" placeholder="Ingrese DNI" required>  
+        <button type="submit" onclick="buscarClientePorDni()" class="buscar"><i class="fa fa-search"></i> Buscar</button>
+
+        <section class="formdos">
+            <label class="items" for="nombre" id="nombreCliente"></label>
+            <label class="items" for="apellido" id="apellidoCliente"></label>
+            <label class="items" for="dni" id="dniCliente"></label>
+            <label class="items" for="fechanac" id="fechanacCliente"></label>
+            <label class="items" for="telefono" id="telefonoCliente"></label>
+            <label class="items" for="email" id="emailCliente"></label>
+        </section>
+    
+        </div>    
+        
+    
+    <!-- Cobranza -->
+
+    <h2 class="cargaventa">CARGAR VENTA</h2>
+
+    <div class="formventas">
+
+
+        <input class="controlMont" type="number" placeholder="Monto Cobrado" step="0.01" min="0" required>
+        <button class="guardarMont">Guardar</button>
+
+    </div>
+    </div>
+
+
+
+
+
+    <div class="transacciones">
+        <h3 class="historial">Historial de transacciones</h3>
+
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
