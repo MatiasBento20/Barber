@@ -18,31 +18,33 @@
     </div>
     <!-- Inicio de formulario-->
     <form class="form">
-
-
         <label class="items" for="nombre">Nombre:</label>
         <input class="controls" type="text" name="nombre" id="nombre">
+
         <label class="items" for="nombre">Apellido:</label>
         <input class="controls" type="text" name="apellido" id="apellido">
+
         <label class="items" for="nombre">DNI:</label>
-        <input class="controls" type="number" name="dni" id="dni">
-        <label class="items" for="">Fecha de nacimiento:</label>
-        <input class="controls" type="date" name="fechanc" id="fechanac">
+        <input class="controls" type="text" name="dni" id="dni" pattern="\d{8}" maxlength="8" title="El DNI debe tener exactamente 8 dígitos" required>
+        
+        <label class="items" for="fechanac">Fecha de nacimiento:</label>
+        <input class="controls" type="date" name="fechanac" id="fechanac"  min="1997-01-01" max="2030-12-31">
+        
         <label class="items" for="nombre">Teléfono:</label>
-        <input class="controls" type="number" name="telefono " id="telefono">
+        <input class="controls" type="tel" name="telefono" id="telefono">
+        
         <label class="items" for="nombre">Email:</label>
         <input class="controls" type="email" name="email" id="email">
-        <button type="submit" onclick="guardarCliente()" id="botonRegistro" class="guardar"><i class="fa fa-search"></i> Guardar</button>
+        <button type="submit" onclick="guardarCliente()" id="botonRegistro" class="guardar"><i class="fa fa-search"></i>Guardar</button>
+    </form>
+    <div id="mensajeRegistro"></div>
 
+    
+        <div class="volver">
+            <a href="index.html" class="volverUno">VOLVER</a>
+        </div>
+        
 
-
-
-
-
-
-
-
-    <form>
 
 
 

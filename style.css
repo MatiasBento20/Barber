@@ -149,6 +149,37 @@ body{
     color: black;
 
 }
+.volver{
+    display: flex;
+    flex-direction: row;
+}
+
+.volver .volverUno{
+    cursor: pointer;
+    margin: auto;
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: rgb(10, 10, 10);
+    border: 1px solid #fff;
+    color: white;
+    text-transform: uppercase;
+    transition: .5s;
+    text-decoration: none;
+    margin-top: 25px;
+ 
+}
+
+.volver .volverUno:hover {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    color: black;
+
+}
+/* comienzo de la página ventas */ 
 
 
 .formventas {
@@ -157,9 +188,8 @@ body{
     width: 40%;
     background-color: #000000;
     margin-top: 10px;
-    margin: auto;
     margin-left: 25%; /* Ajusta el margen izquierdo */
-    padding: 20px;
+    padding: 15px;
 }
 
 .formventas .control {
@@ -173,6 +203,7 @@ body{
     margin-top: 10px;
     border-radius: 5px;
     letter-spacing: 1px;
+
 }
 
 .formventas .buscar {
@@ -194,17 +225,58 @@ body{
     color: black;
 
 }
+.cobranza{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    background-color: #000000;
+    margin-top: 15px;
+    margin-left: 25%; /* Ajusta el margen izquierdo */
+    padding: 15px;
+}
+.cobranza .cobrar{
+    background-color: white;
+    width: 35%;
+    height: 30px;
+    color: black;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 0.5em;
+    margin-top: 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.cobranza .guardarCobranza{
+    border-radius: 5px;
+    position: absolute;
+    width: 8%;
+    height: 31px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    margin-left: 40%;
+}
+.cobranza .guardarCobranza:hover {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    border-style: dotted;
+    color: black;
+
+}
+
 
 .conteiner .formdos{
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 15.5%;
-    right: 25%;
+    right: 26%;
     padding: 5px;
     border-radius: 2px;
     width: 20%;
-    height: 30%;
+    height: 25%;
     border-color: #D4AF37;
     border-width: 3px;
     border-style: solid; 
@@ -237,29 +309,11 @@ body{
     letter-spacing: 1px;
 
 }
-.formventas .guardarMont{
 
-    border-radius: 5px;
-    width: 22%;
-    height: 31px;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
-    margin-top: 10px;
-    letter-spacing: 1px;
-    margin-left: 20px;
-    
-    
-    
-    
-}
-.formventas .guardarMont:hover {
-    background-color: #D4AF37;
-    border-color: #D4AF37;
-    border-style: dotted;
-    color: black;
 
-}
+
+
+
 
 .dclientes{
     display: flex;
@@ -286,7 +340,7 @@ body{
     font-size: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
-    margin-top: 2%;
+    margin-top: 5%;
     padding: 2px;
     margin-right: 20.5%;
 
@@ -316,6 +370,11 @@ body{
     border-style: dotted;
     color: black;
 
+}
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
 }
 
 .transacciones{

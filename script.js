@@ -20,6 +20,8 @@ function buscarClientePorDni() {
         });
 }
 
+
+
 function guardarCliente() {
     var nombre = document.getElementById('nombre').value;
     var apellido = document.getElementById('apellido').value;
@@ -27,28 +29,37 @@ function guardarCliente() {
     var fechanac = document.getElementById('fechanac').value;
     var telefono = document.getElementById('telefono').value;
     var email = document.getElementById('email').value;
-    const data = {
-        "dni": dni,
-        "nombre": nombre,
-        "apellido": apellido,
-        "fechaNacimiento": fechanac,
-        "email": email,
-        "telefono": telefono,
+
+    var data = {
+        nombre: nombre,
+        apellido: apellido,
+        dni: dni,
+        fechanac: fechanac,
+        telefono: telefono,
+        email: email
     };
 
-    axios.post(`https://cork-be.onrender.com/customer/`, data)
+    axios.post('https://cork-be.onrender.com/customer/', data)
         .then(response => {
             // Manejar la respuesta del servidor
             console.log(response.data);
+
+            // Mostrar el mensaje de cliente registrado
+            var mensajeRegistro = document.getElementById('mensajeRegistro');
+            mensajeRegistro.textContent = 'Cliente registrado correctamente';
         })
         .catch(error => {
             // Manejar errores
             console.error(error);
+
+            // En caso de error, puedes mostrar un mensaje de error en lugar del mensaje de registro
+            var mensajeRegistro = document.getElementById('mensajeRegistro');
+            mensajeRegistro.textContent = 'Error al registrar el cliente';
         });
 }
+
 function mostrarDatosCliente(data) {
-    document.getElementById('nombreCliente').textContent = `${data.Nombre}`;
-    document.getElementById('apellidoCliente').textContent = `${data.Apellido}`;
+    document.getElementById('nombreCliente').textContent = `${data.Nombre}` + ` ` + `${data.Apellido}`;
     document.getElementById('dniCliente').textContent = `${data.DNI}`;
     document.getElementById('fechanacCliente').textContent = `${data.FechaNacimiento}`;
     document.getElementById('telefonoCliente').textContent = `${data.Telefono}`;
