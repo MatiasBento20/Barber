@@ -39,22 +39,33 @@ function guardarCliente() {
         email: email
     };
 
-    axios.post('https://cork-be.onrender.com/customer/', data)
-        .then(response => {
-            // Manejar la respuesta del servidor
-            console.log(response.data);
+    const config = {
+        url: `https://cork-be.onrender.com/customer`,
+        method: 'POST',
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Content-Type': 'application/json',
+        },
+        data: data
+    };
 
-            // Mostrar el mensaje de cliente registrado
-            var mensajeRegistro = document.getElementById('mensajeRegistro');
-            mensajeRegistro.textContent = 'Cliente registrado correctamente';
+
+    axios(config)
+        .then(response => { // Manejar la respuesta del servidor
+            console.log(response.data);
+            // Limpiar los campos del formulario
+            document.getElementById('nombre').value = '';
+            document.getElementById('apellido').value = '';
+            document.getElementById('dni').value = '';
+            document.getElementById('fechanac').value = '';
+            document.getElementById('telefono').value = '';
+            document.getElementById('email').value = '';
+            alert(response.data.mensaje);
         })
         .catch(error => {
             // Manejar errores
             console.error(error);
 
-            // En caso de error, puedes mostrar un mensaje de error en lugar del mensaje de registro
-            var mensajeRegistro = document.getElementById('mensajeRegistro');
-            mensajeRegistro.textContent = 'Error al registrar el cliente';
         });
 }
 
@@ -65,9 +76,3 @@ function mostrarDatosCliente(data) {
     document.getElementById('telefonoCliente').textContent = `${data.Telefono}`;
     document.getElementById('emailCliente').textContent = `${data.Email}`;
 }
-
-
-
-
-
-

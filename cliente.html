@@ -17,7 +17,7 @@
 
     </div>
     <!-- Inicio de formulario-->
-    <form class="form">
+    <form class="form" method="post" onsubmit="event.preventDefault(); guardarCliente();">
         <label class="items" for="nombre">Nombre:</label>
         <input class="controls" type="text" name="nombre" id="nombre">
 
@@ -35,7 +35,7 @@
         
         <label class="items" for="nombre">Email:</label>
         <input class="controls" type="email" name="email" id="email">
-        <button type="submit" onclick="guardarCliente()" id="botonRegistro" class="guardar"><i class="fa fa-search"></i>Guardar</button>
+        <button type="submit" id="botonRegistro" class="guardar"><i class="fa fa-search"></i>Guardar</button>
     </form>
     <div id="mensajeRegistro"></div>
 
