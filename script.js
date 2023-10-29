@@ -20,6 +20,14 @@ function buscarClientePorDni() {
         });
 }
 
+function transformarFecha(fecha) {
+    const fechaOriginal = new Date(fecha);
+    const dia = fechaOriginal.getDate().toString().padStart(2, '0');
+    const mes = (fechaOriginal.getMonth() + 1).toString().padStart(2, '0'); // Los meses en JavaScript comienzan desde 0 (enero es 0).
+    const año = fechaOriginal.getFullYear().toString();
+  
+    return `${dia}-${mes}-${año}`;
+  }
 
 
 function guardarCliente() {
@@ -34,7 +42,7 @@ function guardarCliente() {
         nombre: nombre,
         apellido: apellido,
         dni: dni,
-        fechanac: fechanac,
+        fechaNacimiento: transformarFecha(fechanac),
         telefono: telefono,
         email: email
     };
@@ -65,6 +73,9 @@ function guardarCliente() {
         .catch(error => {
             // Manejar errores
             console.error(error);
+            if( error.errno == 1062 ) {
+                alert("Ya existe un usuario con ese DNI");
+            }
 
         });
 }
