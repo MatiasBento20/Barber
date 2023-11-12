@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Ver Transacciones / CORK </title>
+</head>
+<body>
+    <div class="tventas">
+        <h1 class="ventas">Cork - <span>TRANSACCIONES</span></h1>
+    </div>
+    <!-- para buscar transacciones-->
+    <div class="conteiner">
+        <div id="formBusqueda" class="formtransacciones">
+
+
+        <input class="control" type="number" name="dni" id="dni" placeholder="Ingrese DNI" pattern="\d{8}" maxlength="8" title="El DNI debe tener exactamente 8 dígitos" required>>  
+        <button type="submit" onclick="buscarTransaccionPorDni()" class="buscar"><i class="fa fa-search"></i> Buscar</button>
+    
+    </div>
+    <div class="formconteiner">
+        <section class="formTres">
+            <label class="items" for="montoCobrado" id="monto"></label>
+            <label class="items" for="detalle" id="detalle"></label>
+            <label class="items" for="fecha" id="fecha"></label>
+        </section>
+    </div>
+    <div class="botonVolver">
+        <a href="index.html" class="volverDos">VOLVER</a>
+    </div>
+
+
+    
+    <script src="script.js"></script> 
+</body>
+</html>

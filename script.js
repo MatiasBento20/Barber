@@ -20,6 +20,7 @@ function buscarClientePorDni() {
         });
 }
 
+
 function transformarFecha(fecha) {
     const fechaOriginal = new Date(fecha);
     const dia = fechaOriginal.getDate().toString().padStart(2, '0');
@@ -86,4 +87,75 @@ function mostrarDatosCliente(data) {
     document.getElementById('fechanacCliente').textContent = `${data.FechaNacimiento}`;
     document.getElementById('telefonoCliente').textContent = `${data.Telefono}`;
     document.getElementById('emailCliente').textContent = `${data.Email}`;
+    document.getElementById('puntosActuales').textContent = `Puntos actuales: ${data.PuntosActuales}`;
+    document.getElementById('puntosTotales').textContent = `Puntos totales: ${data.PuntosTotales}`;
+}
+
+// Funcion de Guardar Corte//
+function guardarCorte() {
+    var montoCobrado = document.getElementById('monto').value;
+    var detalle = document.getElementById('detalle').value;
+    var fecha = document.getElementById('fecha').value;
+    var empleado = document.getElementById('empleado').value;
+    var dni = document.getElementById('dni').value;
+
+    var data = {
+        monto: montoCobrado,
+        detalle: detalle,
+        fecha: transformarFecha(fecha),
+        employeeid: empleado,
+        dni: dni,
+        
+        
+    };
+
+    const config = {
+        url: `https://cork-be.onrender.com/transactions`,
+        method: 'POST',
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Content-Type': 'application/json',
+        },
+        data: data
+    };
+
+
+    axios(config)
+        .then(response => { // Manejar la respuesta del servidor
+            console.log(response.data);
+            // Limpiar los campos del formulario
+            document.getElementById('monto').value = '';
+            document.getElementById('detalle').value = '';
+            document.getElementById('fecha').value = '';
+            document.getElementById('empleado').value = '';
+            alert(response.data.mensaje);
+        })
+      
+}
+function buscarTransaccionPorDni() {
+    var dni = document.getElementById('dni').value;
+    const config = {
+        url: `https://cork-be.onrender.com/transactions/${dni}`,
+        method: 'GET',
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Content-Type': 'application/json',
+        },
+    };
+
+    axios(config)
+        .then(response => {
+            var clienteData = response.data[0]; // Suponiendo que la respuesta contiene los datos del cliente
+            mostrarTransacciones(clienteData); // Llamar a la función para mostrar los datos en la página
+        })
+        .catch(error => {
+            // Manejar errores
+            console.error(error);
+        });
+}
+
+function mostrarTransacciones(data) {
+    document.getElementById('monto').textContent = `Monto Cobrado: ${data.monto}`;
+    document.getElementById('detalle').textContent = `Detalle: ${data.detalle}`;
+    document.getElementById('fecha').textContent = `Fecha: ${data.fecha}`;
 }

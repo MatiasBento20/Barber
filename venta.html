@@ -32,38 +32,32 @@
             <label class="items" for="fechanac" id="fechanacCliente"></label>
             <label class="items" for="telefono" id="telefonoCliente"></label>
             <label class="items" for="email" id="emailCliente"></label>
+            <label class="items" for="puntosactuales" id="puntosActuales"></label>
+            <label class="items" for="puntostotales" id="puntosTotales"></label>
         </section>
     
-        </div>    
+    </div>    
         
     
     <!-- Cobranza -->
 
     <h2 class="cargaventa">CARGAR VENTA</h2>
 
-    <div class="cobranza">
-        
+    <!-- Inicio de formulario para guardar corte-->
+    <form class="cobranza" method="post" onsubmit="event.preventDefault(); guardarCorte();">
+        <input class="controlsGuardar" type="text" placeholder="Monto Cobrado" name="monto" id="monto">
+        <input class="controlsGuardar" type="text" placeholder="Detalle" name="detalle" id="detalle">
+        <input class="controlsGuardar" type="date" placeholder="Fecha" name="fecha" id="fecha"  min="1900-01-01" max="2070-12-31">
+        <input class="controlsGuardar" type="tel" placeholder="Empleado" name="empleado" id="empleado">
+        <button type="submit" id="botonRegistro" class="guardarCobranza">Guardar</button>
+    </form>
 
+    
+    
+  
 
-        <input class="cobrar" type="number" placeholder="Monto Cobrado" step="0.01" min="0" required>
-        <input class="cobrar" type="text" placeholder="Detalle" step="0.01" min="0" required>
-        <input class="cobrar" type="text" placeholder="Empleado" step="0.01" min="0" required>
-        <button class="guardarCobranza">Guardar</button>
-
-    </div>
-    </div>
-
-
-
-
-
-    <div class="transacciones">
-        <h3 class="historial">Historial de transacciones</h3>
-
-    </div>
-
-    <div class="volver">
-        <a href="index.html" class="volverUno">VOLVER</a>
+    <div class="botonVolver">
+        <a href="index.html" class="volverDos">VOLVER</a>
     </div>
 
 
