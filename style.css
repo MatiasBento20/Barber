@@ -95,7 +95,7 @@ body{
     font-weight: 500;
 
 }
-
+/* Pagina de clientes -----------------*/
 .form{
     display: flex;
     flex-direction: column;
@@ -179,194 +179,81 @@ body{
     color: black;
 
 }
-/* comienzo de la página ventas **********************************/ 
 
+
+/* pagina de ventas ---------------------*/
+/* Estilos para el contenedor y los elementos del formulario */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 .formventas {
+    width: 50%;
+    max-width: 300px; /* Ancho máximo del formulario */
+    margin-bottom: 15px;
+}
+
+.upper-section {
     display: flex;
-    flex-direction: row;
-    width: 40%;
-    background-color: #000000;
-    margin-top: 10px;
-    margin-left: 25%; /* Ajusta el margen izquierdo */
-    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    
 }
 
-.formventas .control {
-    background-color: white;
-    width: 35%;
-    height: 30px;
-    color: black;
-    font-size: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-indent: 0.5em;
-    margin-top: 10px;
-    border-radius: 5px;
-    letter-spacing: 1px;
-
+.control {
+    width: calc(60% - 10px); /* Ancho del input DNI */
+    height: 26px;
+    border-radius: 5px solid;
+    
 }
 
-.formventas .buscar {
-    border-radius: 5px;
-    width: 22%;
-    height: 31px;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
-    margin-top: 10px;
-    letter-spacing: 1px;
-    margin-left: 20px;
+.buscar {
+    width: 32%; /* Ancho del botón Buscar */
+    height: 26px;
+    border-radius: 5px solid;
 }
-
-.formventas .buscar:hover {
+.upper-section .buscar:hover {
     background-color: #D4AF37;
     border-color: #D4AF37;
     border-style: dotted;
     color: black;
 
 }
-.cobranza{
+/* Estilos para los elementos del formulario */
+
+.container {
     display: flex;
-    flex-direction: row;
-    width: 47.7%;
-    background-color: #000000;
-    margin-top: 40px;
-    margin-left: 26.3%; /* Ajusta el margen izquierdo */
-    
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }
-.cobranza .controlsGuardar{
-    width: 60%;
-    height: 30px;
-    background-color: white;
-    color: #000000;
+
+.formulario {
+    width: 80%;
+    max-width: 300px; /* Ancho máximo del formulario */
     border-radius: 5px;
-    margin-bottom: 16px;
-    margin-top: 5px;  
-    font-size: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-indent: 0.5em;
-    border-color: #000000;
-
+    border: 3px solid #D4AF37;
+    padding: 10px;
 }
 
-.guardarCobranza{
-    border-radius: 5px;
-    width: 47.5%;
-    height: 31px;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 5px;
+.formdos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el ancho mínimo de las columnas */
+    gap: 10px;
 }
 
-.guardarCobranza:hover {
-    background-color: #D4AF37;
-    border-color: #D4AF37;
-    border-style: dotted;
-    color: black;
-
-}
-.botonVolver{
-    display: flex;
-    flex-direction: column;
-    
-}
-.botonVolver .volverDos{
-    cursor: pointer;
-    margin: auto;
-    letter-spacing: 4px;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
-    border-radius: 5px;
-    padding: 5px 15px;
-    background-color: rgb(71, 70, 70);
-    border: 1px solid #fff;
-    color: white;
-    text-transform: uppercase;
-    transition: .5s;
-    text-decoration: none;
-    margin-top: 20px;
-    
-
- 
-}
-
-.botonVolver .volverDos:hover {
-    background-color: #D4AF37;
-    border-color: #D4AF37;
-    color: black;
-
-
-}
-
-
-.conteiner .formdos{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 15.5%;
-    right: 26%;
-    padding: 5px;
-    border-radius: 2px;
-    width: 20%;
-    height: 30%;
-    border-color: #D4AF37;
-    border-width: 3px;
-    border-style: solid; 
-
- 
- 
-}
-
-.conteiner .formdos .items{
+.items {
     color: #D4AF37;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 10px; /* Ajusta la altura de línea */
     text-align: center;
-    
-    
-
-}
-.formventas .controlMont{
-
-    background-color: white;
-    width: 35%;
-    height: 30px;
-    color: black;
-    font-size: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-indent: 0.5em;
-    margin-top: 10px;
-    border-radius: 5px;
-    letter-spacing: 1px;
-
-}
-
-
-
-
-
-
-.dclientes{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    background-color: #fff;
-    width: 60%;
-    height: 80px;
-    border-radius: 5px;
-    margin-top: 5%;
-}
-.dclientes .datoscliente{
-    color: #000000;
-    font-size: 25px;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: auto;
-
+    margin: 5px; /* Agrega un pequeño margen entre los elementos */
 }
 
 .cargaventa{
@@ -375,9 +262,8 @@ body{
     font-size: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
-    margin-top: 5%;
-    padding: 2px;
-    margin-right: 20.5%;
+    padding: 10px;
+    
 
    
 }
@@ -406,294 +292,593 @@ body{
     color: black;
 
 }
-::-webkit-datetime-edit-year-field:not([aria-valuenow]),
-::-webkit-datetime-edit-month-field:not([aria-valuenow]),
-::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
-    color: transparent;
-}
-.conteinerDos{
-    display: flex;
-    flex-direction: row;
-    width: 47.7%;
-    background-color: #000000;
-    margin-top: 40px;
-    margin-left: 26.3%; /* Ajusta el margen izquierdo */
 
-}
-.conteinerDos .formTres{
+
+
+
+
+
+
+.cobranza{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 15.5%;
-    right: 26%;
-    padding: 5px;
-    border-radius: 2px;
-    width: 20%;
-    height: 30%;
-    border-color: #D4AF37;
-    border-width: 3px;
-    border-style: solid; 
-    
-}
-/* Comienzo de la página de transacciones  *************************/
-.formtransacciones {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    width: 40%;
+    width: 30%;
+    align-items: center;
     background-color: #000000;
-    margin-top: 10px;
-    padding: 15px;
+    margin: auto;
+    
+   
     
 }
-
-.formtransacciones .control {
-    background-color: white;
-    width: 35%;
+.cobranza .controlsGuardar{
+    width: 60%;
     height: 30px;
-    color: black;
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    margin-top: 5px;  
     font-size: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-indent: 0.5em;
-    margin-top: 10px;
-    border-radius: 5px;
-    letter-spacing: 1px;
+    border-color: #000000;
 
 }
 
-.formtransacciones .buscar {
+
+
+
+.cobranza .volverGuardar{
+    display: flex;
+    flex-direction: row;
+    width: 47%;
+    margin-right: 12%;
+    
+    
+}
+.cobranza .volverGuardar .guardarCobranza{
     border-radius: 5px;
-    width: 22%;
-    height: 31px;
+    height: 30px;
+    width: 70%;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
-    margin-top: 10px;
     letter-spacing: 1px;
-    margin-left: 20px;
-}
+   
+    
 
-.formtransacciones .buscar:hover {
+}
+.guardarCobranza:hover {
     background-color: #D4AF37;
     border-color: #D4AF37;
     border-style: dotted;
     color: black;
 
 }
-.formconteiner{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.volverTres{
+    cursor: pointer;
+    margin: auto;
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgb(71, 70, 70);
+    border: 1px solid #fff;
+    color: white;
+    text-transform: uppercase;
+    transition: .5s;
+    text-decoration: none;
+    margin-left: 10px;
     
 
-}
-.formconteiner .formTres{
-    margin: auto;
-    margin-top: 15px;
-    padding: 5px;
-    width: 38%;
-    height: 45px;
-    border-color: #D4AF37;
-    border-radius: 2px;
-    border-width: 3px;
-    border-style: solid;
-    align-items: center;
 
- 
- 
 }
-.formconteiner .formTres .items{
+
+
+
+
+
+
+.dclientes{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: #fff;
+    width: 60%;
+    height: 80px;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+.dclientes .datoscliente{
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+
+}
+
+
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
+
+/* Comienzo de la página de transacciones  *************************/
+
+/* Estilos para el contenedor y los elementos del formulario */
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formtransacciones {
+    width: 50%;
+    max-width: 300px; /* Ancho máximo del formulario */
+    margin-bottom: 15px;
+}
+
+.upper-sectionDos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    
+}
+
+.control {
+    width: calc(60% - 10px); /* Ancho del input DNI */
+    height: 26px;
+    border-radius: 5px solid;
+    
+}
+
+.buscar {
+    width: 32%; /* Ancho del botón Buscar */
+    height: 26px;
+    border-radius: 5px solid;
+}
+.upper-sectionDos .buscar:hover {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    border-style: dotted;
+    color: black;
+
+}
+/* Estilos para los elementos del formulario */
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.formularioTres {
+    width: 100%;
+    max-width: 300px; /* Ancho máximo del formulario */
+    border-radius: 5px;
+    border: 3px solid #D4AF37;
+    height: 150px;
+    
+}
+
+.formdos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el ancho mínimo de las columnas */
+    gap: 2px;
+}
+
+.items {
     color: #D4AF37;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 1px;
-    line-height: 30px;
-    margin-left: 10px;
-    
-   
+    line-height: 20px; /* Ajusta la altura de línea */
+    text-align: center;
+    margin: 5px; /* Agrega un pequeño margen entre los elementos */
+}
+.volverDos{
+    cursor: pointer;
+    margin: auto;
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgb(71, 70, 70);
+    border: 1px solid #fff;
+    color: white;
+    text-transform: uppercase;
+    transition: .5s;
+    text-decoration: none;
     
 }
 
 
 
-@media screen and (max-width:800px){
 
-    .form{
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        background-color: #000000;
-        margin: auto;
+
+
+/* para celulares hasta 800*/
+@media screen and (min-width: 375px) and (max-width: 800px) {
+    
+    
+    /* VENTAS ------------------*/
+    .tventas .ventas{
+        font-size: 30px;
         margin-top: 5px;
-        border-radius: 5px;
-        padding: 10px;
-    
-    
     }
-    .form .controls{
-        width: 100%;
-        height: 30px;
-        background-color: white;
-        color: #000000;
-        border-radius: 5px;
-        margin-bottom: 16px;
-        margin-top: 5px;  
-        font-size: 15px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-indent: 0.5em;
-        border-color: #000000;
-    }
-    .form .items{
-        color: white;
-        font-size: 15px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        letter-spacing: 1px;
-        
-        
-    }
-    
-    
-    .form .guardar{ 
-        border-radius: 5px;
-        height: 30px;
-        width: 30%;
+    #registro{
+        font-size: 30px;
+        margin: auto;
         text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 15px;
-        letter-spacing: 1px;
-        
+        margin-top: 5px;
     }
-    .form .guardar:hover {
-        background-color: #D4AF37;
-        border-color: #D4AF37;
-        border-style: dotted;
-        color: black;
     
-    }
+    /* pagina de ventas ---------------------*/
+/* Estilos para el contenedor y los elementos del formulario */
 
-    .formventas{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        background-color: #000000;
-        margin-top: 10px;
-        border-radius: 5px;
-        padding: 10px;
-        margin: auto;
-        
-    
-    }
-    .formventas .control{
-        background-color: white;
-        width: 50%;
-        height: 30px;
-        color: black;
-        font-size: 15px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-indent: 0.5em;
-        margin-top: 10px;
-        margin: auto;
-        border-radius: 5px;
-        margin-left: 5px;
-        letter-spacing: 1px;
-        
-        
-    }
-    
-    
-    .formventas .buscar{ 
-        border-radius: 5px;
-        width: 30%;
-        height: 31px;
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 15px;
-        margin-top: 2px;
-        margin-left: 5px;
-        letter-spacing: 1px;
-        
-        
-        
-    }
-    .formventas .buscar:hover {
-        background-color: #D4AF37;
-        border-color: #D4AF37;
-        border-style: dotted;
-        color: black;
-    
-    }
-    .dclientes{
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-        background-color: #fff;
-        width: 90%;
-        height: 50px;
-        border-radius: 5px;
-        margin-top: 5%;
-    }
-    .dclientes .datoscliente{
-        color: #000000;
-        font-size: 20px;
-        text-align: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        margin: auto;
-    
-    }
-    
-    .cargaventa{
-        text-align: center;
-        color: #D4AF37;
-        font-size: 35px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-weight: 500;
-        margin-top: 5%;
-        padding: 8px;
-    
-       
-    }
-    .formventas .guardar{ 
-        border-radius: 5px;
-        width: 30%;
-        height: 31px;
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 15px;
-        margin-top: 1px;
-        margin-left: 5px;
-        letter-spacing: 1px;
-        
-        
-        
-    }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formventas {
+    width: 50%;
+    max-width: 300px; /* Ancho máximo del formulario */
+    margin-bottom: 15px;
+}
+
+.upper-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
     
     
     
-    .formventas .guardar:hover{
+}
+
+.control {
+    width: calc(60% - 10px); /* Ancho del input DNI */
+    height: 26px;
+    border-radius: 5px solid;
     
-        background-color: #D4AF37;
-        border-color: #D4AF37;
-        border-style: dotted;
-        color: black;
+}
+
+.buscar {
+    width: 36%; /* Ancho del botón Buscar */
+    height: 26px;
+    border-radius: 5px solid;
+}
+.upper-section .buscar:hover {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    border-style: dotted;
+    color: black;
+
+}
+/* Estilos para los elementos del formulario */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36vh;
+}
+
+.formulario {
+    width: 60%;
+    height: 100%;
+    max-width: 300px; /* Ancho máximo del formulario */
+    border-radius: 5px;
+    border: 3px solid #D4AF37;
+}
+
+.formdos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el ancho mínimo de las columnas */
+    gap: 1px;
+    margin-top: 6px;
+}
+
+.items {
+    color: #D4AF37;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    line-height: 10px; /* Ajusta la altura de línea */
+    text-align: center;
+    margin: 5px; /* Agrega un pequeño margen entre los elementos */
+}
+  
+.cobranza{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background-color: #000000;
+    margin: auto;
+    margin-top: 10px;
     
-    }
     
-    .transacciones{
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-        background-color: #fff;
-        width: 90%;
-        height: 50px;
-        border-radius: 5px;
-        margin-top: 5%;
-    }
-    .transacciones .historial{
-        color: #000000;
-        font-size: 20px;
-        text-align: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        margin: auto;
-    }
+}
+.cobranza .controlsGuardar{
+    margin: auto;
+    height: 30px;
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+    margin-bottom: 16px; 
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 0.5em;
+    border-color: #000000;
+
+}
+
+.guardarCobranza{
+    border-radius: 5px;
+    width: 31%;
+    height: 31px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: auto;
+}
+
+.guardarCobranza:hover {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    border-style: dotted;
+    color: black;
+
+}
+.botonVolver{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.botonVolver .volverDos{
+    width: 27%;
+    height: 31px;
+    cursor: pointer;
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(71, 70, 70);
+    border: 1px solid #fff;
+    color: white;
+    text-transform: uppercase;
+    transition: .5s;
+    text-decoration: none;
+    
+}
+
+.botonVolver .volverDos:hover {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    color: black;
+
+
+}
+
+
+.dclientes{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: #fff;
+    width: 60%;
+    height: 80px;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+.dclientes .datoscliente{
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+
+}
+
+.cargaventa{
+    color: #D4AF37;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: auto;
+    
+}
+.formventas .guardar{ 
+    border-radius: 5px;
+    width: 22%;
+    height: 31px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    margin-top: 3px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    
+    
+    
+}
+
+
+
+.formventas .guardar:hover{
+
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    border-style: dotted;
+    color: black;
+
+}
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
+/* Clientes -----------------------------------*/
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #000000;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 10px;
+
+
+}
+.form .controls{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    margin-top: 5px;  
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 0.5em;
+    border-color: #000000;
+}
+.form .items{
+    color: white;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    
+    
+}
+
+
+
+.form .guardar{ 
+    border-radius: 5px;
+    height: 30px;
+    width: 40%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    
+}
+.form .guardar:hover {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    border-style: dotted;
+    color: black;
+
+}
+.volver{
+    display: flex;
+    flex-direction: row;
+}
+
+.volver .volverUno{
+    cursor: pointer;
+    margin: auto;
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: rgb(71, 70, 70);
+    border: 1px solid #fff;
+    color: white;
+    text-transform: uppercase;
+    transition: .5s;
+    text-decoration: none;
+
+ 
+}
+
+.volver .volverUno:hover {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    color: black;
+
+}
+/* Comienzo de la página de transacciones  *************************/
+
+
+  /* INDEX PRINCIPAL ---------------*/
+  .contenido{
+    display: flex;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenido .titulo{
+    text-align: center;
+    color: #D4AF37;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: 100px;
+   
+   
+    
+}
+.contenido .titulo span{
+    font-size: 50px;
+    color: #D4AF37;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+
+
+}
+.contenido .titulo .Ktitle{
+    width: 50px;
+    height: 60px;
+    top: 10px;
+    position: relative;
+    
+}
+
+  
+.contenido .botuno{
+    
+    cursor: pointer;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(10, 10, 10);
+    border: 1px solid #fff;
+    color: white;
+    text-transform: uppercase;
+    transition: .5s;
+    text-decoration: none;
+ 
+}
+
+.botuno:hover {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    color: black;
+}
+  
+
+
 
 }

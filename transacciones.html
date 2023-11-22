@@ -5,32 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Ver Transacciones / CORK </title>
 </head>
 <body>
     <div class="tventas">
-        <h1 class="ventas">Cork - <span>TRANSACCIONES</span></h1>
+        <h1 class="ventas">Cork - <span id="registro">TRANSACCIONES</span></h1>
     </div>
     <!-- para buscar transacciones-->
     <div class="conteiner">
-        <div id="formBusqueda" class="formtransacciones">
+    <div class="formtransacciones">
+        <div id="formBusqueda" class="upper-sectionDos">
 
 
-        <input class="control" type="number" name="dni" id="dni" placeholder="Ingrese DNI" pattern="\d{8}" maxlength="8" title="El DNI debe tener exactamente 8 dígitos" required>>  
+        <input class="control" type="number" name="dni" id="dni" placeholder=" Ingrese DNI" pattern="\d{8}" maxlength="8" title="El DNI debe tener exactamente 8 dígitos" required>>  
         <button type="submit" onclick="buscarTransaccionPorDni()" class="buscar"><i class="fa fa-search"></i> Buscar</button>
     
     </div>
-    <div class="formconteiner">
-        <section class="formTres">
+    <div class="formularioTres">
+        <section class="formdos">
             <label class="items" for="montoCobrado" id="monto"></label>
             <label class="items" for="detalle" id="detalle"></label>
             <label class="items" for="fecha" id="fecha"></label>
         </section>
     </div>
-    <div class="botonVolver">
-        <a href="index.html" class="volverDos">VOLVER</a>
     </div>
+    <a href="index.html" class="volverDos">VOLVER</a>
+    
 
 
     

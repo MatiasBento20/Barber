@@ -14,29 +14,35 @@
 <body>
 
     <div class="tventas">
-        <h1 class="ventas">Cork - <span>REGISTRO DE VENTAS</span></h1>
+        <h1 class="ventas">Cork - <span id="registro">REGISTRO DE VENTAS</span></h1>
 
 
     </div>
-    <div class="conteiner">
-        <div id="formBusqueda" class="formventas">
-
-
-        <input class="control" type="number" name="dni" id="dni" placeholder="Ingrese DNI" pattern="\d{8}" maxlength="8" title="El DNI debe tener exactamente 8 dígitos" required>>  
-        <button type="submit" onclick="buscarClientePorDni()" class="buscar"><i class="fa fa-search"></i> Buscar</button>
-
-        <section class="formdos">
-            <label class="items" for="nombre" id="nombreCliente"></label>
-            <label class="items" for="apellido" id="apellidoCliente"></label>
-            <label class="items" for="dni" id="dniCliente"></label>
-            <label class="items" for="fechanac" id="fechanacCliente"></label>
-            <label class="items" for="telefono" id="telefonoCliente"></label>
-            <label class="items" for="email" id="emailCliente"></label>
-            <label class="items" for="puntosactuales" id="puntosActuales"></label>
-            <label class="items" for="puntostotales" id="puntosTotales"></label>
-        </section>
+    <div class="container">
+        <div class="formventas">
+            <div class="upper-section">
+                <input class="control" type="number" name="dni" id="dni" placeholder=" Ingrese DNI" pattern="\d{8}" maxlength="8" title="El DNI debe tener exactamente 8 dígitos" required>
+                <button type="button" onclick="buscarClientePorDni()" class="buscar"><i class="fa fa-search"></i> Buscar</button>
+            </div>
+        </div>
+        
     
-    </div>    
+        <div class="formulario">
+            <section class="formdos">
+                <label class="items" for="nombre" id="nombreCliente"></label>
+                <label class="items" for="apellido" id="apellidoCliente"></label>
+                <label class="items" for="dni" id="dniCliente"></label>
+                <label class="items" for="fechanac" id="fechanacCliente"></label>
+                <label class="items" for="telefono" id="telefonoCliente"></label>
+                <label class="items" for="email" id="emailCliente"></label>
+                <label class="items" for="puntosactuales" id="puntosActuales"></label>
+                <label class="items" for="puntostotales" id="puntosTotales"></label>
+            </section>
+        </div>
+    </div>
+    
+    
+       
         
     
     <!-- Cobranza -->
@@ -49,16 +55,19 @@
         <input class="controlsGuardar" type="text" placeholder="Detalle" name="detalle" id="detalle">
         <input class="controlsGuardar" type="date" placeholder="Fecha" name="fecha" id="fecha"  min="1900-01-01" max="2070-12-31">
         <input class="controlsGuardar" type="tel" placeholder="Empleado" name="empleado" id="empleado">
+        <input class="controlsGuardar" type="text" placeholder="Sucursal" name="empleado" id="empleado">
+        <div class="volverGuardar">
         <button type="submit" id="botonRegistro" class="guardarCobranza">Guardar</button>
+        
+        <a href="index.html" class="volverTres">VOLVER</a>
+        </div>
     </form>
 
     
     
   
 
-    <div class="botonVolver">
-        <a href="index.html" class="volverDos">VOLVER</a>
-    </div>
+   
 
 
 
