@@ -158,6 +158,5 @@ function mostrarTransacciones(data) {
     document.getElementById('monto').textContent = `Monto Cobrado: ${data.monto}`;
     document.getElementById('detalle').textContent = `Detalle: ${data.detalle}`;
     document.getElementById('fecha').textContent = `Fecha: ${data.fecha}`;
-    document.getElementById('puntosActuales').textContent = `Puntos actuales: ${data.PuntosActuales}`;
-    document.getElementById('puntosTotales').textContent = `Puntos totales: ${data.PuntosTotales}`;
+    
 }

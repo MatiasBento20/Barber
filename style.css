@@ -187,11 +187,11 @@ body{
 .container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+   
 }
 
 .formventas {
-    width: 50%;
+    width: 70%;
     max-width: 300px; /* Ancho máximo del formulario */
     margin-bottom: 15px;
 }
@@ -200,7 +200,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 230px;
+    margin-right: 10%;
+    
     
     
 }
@@ -209,6 +211,7 @@ body{
     width: calc(60% - 10px); /* Ancho del input DNI */
     height: 26px;
     border-radius: 5px solid;
+    
     
 }
 
@@ -228,32 +231,37 @@ body{
 
 .container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 45vh;
+    justify-content: center;
+   
+    
+    
 }
 
 .formulario {
-    width: 80%;
+    width: 30%;
+    height: 270px;
     max-width: 300px; /* Ancho máximo del formulario */
     border-radius: 5px;
     border: 3px solid #D4AF37;
     padding: 10px;
+    
 }
 
 .formdos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el ancho mínimo de las columnas */
-    gap: 10px;
+    gap: 1px;
 }
 
 .items {
     color: #D4AF37;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 1px;
-    line-height: 10px; /* Ajusta la altura de línea */
+    line-height: 2px; /* Ajusta la altura de línea */
     text-align: center;
-    margin: 5px; /* Agrega un pequeño margen entre los elementos */
+    margin: 2px; /* Agrega un pequeño margen entre los elementos */
 }
 
 .cargaventa{
