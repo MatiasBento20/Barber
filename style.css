@@ -169,6 +169,7 @@ body{
     text-transform: uppercase;
     transition: .5s;
     text-decoration: none;
+    margin-left: 10px;
 
  
 }
@@ -241,18 +242,20 @@ body{
 
 .formulario {
     width: 30%;
-    height: 270px;
+    height: 200px;
     max-width: 300px; /* Ancho máximo del formulario */
     border-radius: 5px;
     border: 3px solid #D4AF37;
     padding: 10px;
+    margin-top: -70px;
+    
     
 }
 
-.formdos {
+.formTres {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el ancho mínimo de las columnas */
-    gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); /* Ajusta el ancho mínimo de las columnas */
+    gap: 20px;
 }
 
 .items {
@@ -262,6 +265,7 @@ body{
     line-height: 2px; /* Ajusta la altura de línea */
     text-align: center;
     margin: 2px; /* Agrega un pequeño margen entre los elementos */
+    margin-top: 6px;
 }
 
 .cargaventa{
@@ -271,6 +275,7 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
     padding: 10px;
+    margin-top: -65px;
     
 
    
@@ -426,7 +431,7 @@ body{
 }
 
 .formtransacciones {
-    width: 50%;
+    width: 100%;
     max-width: 300px; /* Ancho máximo del formulario */
     margin-bottom: 15px;
 }
@@ -464,50 +469,84 @@ body{
 .conteiner {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 40vh;
 }
 
 .formularioTres {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     max-width: 300px; /* Ancho máximo del formulario */
-    border-radius: 5px;
-    border: 3px solid #D4AF37;
     height: 150px;
+    
     
 }
 
 .formdos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el ancho mínimo de las columnas */
-    gap: 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #D4AF37;
+    gap: 1px;
+    align-items: center;
+    margin-top: 10%;
+    
+}
+.transaccion{
+    width: 250%;
+    margin-bottom: 25px;
+    text-align: center;
+   
 }
 
-.items {
-    color: #D4AF37;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    letter-spacing: 1px;
-    line-height: 20px; /* Ajusta la altura de línea */
-    text-align: center;
-    margin: 5px; /* Agrega un pequeño margen entre los elementos */
+.canjeo {
+    display: flex;
+    justify-content: center; /* Para centrar horizontalmente */
 }
+
 .volverDos{
     cursor: pointer;
-    margin: auto;
     letter-spacing: 4px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
     border-radius: 5px;
     padding: 5px 10px;
-    background-color: rgb(71, 70, 70);
-    border: 1px solid #fff;
-    color: white;
     text-transform: uppercase;
     transition: .5s;
     text-decoration: none;
-    
 }
+
+
+.volverDos {
+    margin-right: 5px; /* Ajusta el margen entre los botones si es necesario */
+    background-color: rgb(71, 70, 70);
+    border: 1px solid #fff;
+    color: white;
+}
+
+.canjear {
+    border-radius: 5px;
+    padding: 5px 23px;
+    height: 30px;
+    width: 65%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 5px solid;
+    margin-left: 10px;
+}
+
+.canjear:hover{
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    border-style: dotted;
+    color: black;
+}
+
+
+
 
 
 
@@ -537,6 +576,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 .formventas {
@@ -580,22 +620,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 36vh;
+    height: 35vh;
 }
 
 .formulario {
     width: 60%;
-    height: 100%;
+    height: 80%;
     max-width: 300px; /* Ancho máximo del formulario */
     border-radius: 5px;
     border: 3px solid #D4AF37;
+    margin-top: 1px;
+    
 }
 
-.formdos {
+.formTres {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el ancho mínimo de las columnas */
     gap: 1px;
-    margin-top: 6px;
+    
 }
 
 .items {
@@ -707,6 +749,7 @@ body{
     font-size: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: auto;
+    
     
 }
 .formventas .guardar{ 

@@ -22,20 +22,18 @@
         <div class="formventas">
             <div class="upper-section">
                 <input class="control" type="number" name="dni" id="dni" placeholder=" Ingrese DNI" pattern="\d{8}" maxlength="8" title="El DNI debe tener exactamente 8 dígitos" required>
-                <button type="button" onclick="buscarClientePorDni()" class="buscar"><i class="fa fa-search"></i> Buscar</button>
+                <button type="button" onclick="buscarClientePorDni();" class="buscar"><i class="fa fa-search"></i> Buscar</button>
             </div>
         </div>
         
     
         <div class="formulario">
-            <section class="formdos">
+            <section class="formTres">
                 <label class="items" for="nombre" id="nombreCliente"></label>
-                <label class="items" for="apellido" id="apellidoCliente"></label>
                 <label class="items" for="dni" id="dniCliente"></label>
                 <label class="items" for="fechanac" id="fechanacCliente"></label>
                 <label class="items" for="telefono" id="telefonoCliente"></label>
                 <label class="items" for="email" id="emailCliente"></label>
-                <label class="items" for="puntosactuales" id="puntosActuales"></label>
                 <label class="items" for="puntostotales" id="puntosTotales"></label>
             </section>
         </div>
@@ -51,17 +49,20 @@
 
     <!-- Inicio de formulario para guardar corte-->
     <form class="cobranza" method="post" onsubmit="event.preventDefault(); guardarCorte();">
-        <input class="controlsGuardar" type="text" placeholder="Monto Cobrado" name="monto" id="monto">
+        <input class="controlsGuardar" type="number" placeholder="Monto Cobrado" name="monto" id="monto">
         <input class="controlsGuardar" type="text" placeholder="Detalle" name="detalle" id="detalle">
         <input class="controlsGuardar" type="date" placeholder="Fecha" name="fecha" id="fecha"  min="1900-01-01" max="2070-12-31">
         <input class="controlsGuardar" type="tel" placeholder="Empleado" name="empleado" id="empleado">
-        <input class="controlsGuardar" type="text" placeholder="Sucursal" name="empleado" id="empleado">
+        <input class="controlsGuardar" type="number" placeholder="Sucursal" name="sucursal" id="sucursal">
+        <input class="controlsGuardar" type="number" placeholder="Puntos" name="puntos" id="puntosTotales">
         <div class="volverGuardar">
         <button type="submit" id="botonRegistro" class="guardarCobranza">Guardar</button>
         
         <a href="index.html" class="volverTres">VOLVER</a>
         </div>
     </form>
+
+    
 
     
     
